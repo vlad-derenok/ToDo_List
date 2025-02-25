@@ -1,0 +1,19 @@
+.home-page {
+    background-color: #fafafa;
+}
+
+.btn-container {
+    max-width: 81px;
+    margin: 0 auto;
+}
+
+.home-btn {
+    border-radius: 7px;
+    border: none;
+    background-color: #e0ecfa;
+    color: #0c5adf;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 15px;
+    max-height: 35px;
+}

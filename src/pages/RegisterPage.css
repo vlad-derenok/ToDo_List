@@ -1,0 +1,10 @@
+.register-page {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .register-text {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}

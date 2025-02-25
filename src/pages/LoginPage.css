@@ -1,0 +1,22 @@
+.login-page {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .login-text {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+
+        .google {
+            margin: 0 20px;
+        }
+        .github {
+            margin: 0 20px;
+        }
+    }
+}

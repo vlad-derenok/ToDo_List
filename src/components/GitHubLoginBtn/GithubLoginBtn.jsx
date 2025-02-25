@@ -1,6 +1,5 @@
 import { getAuth, signInWithPopup, GithubAuthProvider  } from "firebase/auth";
 import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GithubLoginBtn = () => {

@@ -3,28 +3,25 @@ import {useNavigate} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GithubLoginBtn = () => {
+    const navigate = useNavigate();
     const provider = new GithubAuthProvider();
-    const push = useNavigate();
-    const handleLogin = () => {
-        const auth = getAuth();
-        signInWithPopup(auth, provider)
-            .then((result) => {
-                const user = result.user;
-                console.log(user)
-                // dispatch(setUser({
-                //     email: user.email,
-                //     id: user.uid,
-                //     token: user.accessToken,
-                // }));
-                push('/')
-            }).catch((error) => {
-            const errorMessage = error.message;
-            console.log(errorMessage)
-        });
-    }
-    return (
-        <button className="btn btn-primary" onClick={() => handleLogin()}>Sign in with GitHub 🛠️ </button>
-    )
-}
 
-export {GithubLoginBtn}
+    const handleLogin = async () => {
+        try {
+            const auth = getAuth();
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user;
+            navigate('/');
+        } catch (error) {
+            console.error(error.message);
+        }
+    };
+
+    return (
+        <button className="btn btn-primary" onClick={handleLogin}>
+            Sign in with GitHub 🛠️
+        </button>
+    );
+};
+
+export { GithubLoginBtn };

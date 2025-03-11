@@ -1,4 +1,4 @@
-import {FormCred} from "../Form/Form";
+import {FormCred} from "../FormCred/FormCred";
 import {useDispatch} from "react-redux";
 import  {setUser} from "../../store/slices/userSlice"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";

@@ -102,15 +102,15 @@ function TodoList() {
                 <div className="state-stick">|</div>
                 <div className="state">
                     <p className="state-name">Open</p>
-                    <div className="state-count">14</div>
+                    <div className="state-count">0</div>
                 </div>
                 <div className="state">
                     <p className="state-name">Closed</p>
-                    <div className="state-count">19</div>
+                    <div className="state-count">0</div>
                 </div>
                 <div className="state">
                     <p className="state-name">Archived</p>
-                    <div className="state-count">2</div>
+                    <div className="state-count">0</div>
                 </div>
             </div>
             <div className="task">
